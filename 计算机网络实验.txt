@@ -1,0 +1,64 @@
+﻿1 链路聚合：
+第一种：
+port-channel load-balance dst-ip
+interface range fastethernet 0/1-2
+channel-group 1 mode on
+show running-configure
+
+第二种：
+第一个交换机：
+interface vlan 1
+ip address 192.168.100.1 255.255.255.0
+no shutdown
+port-channel load-balance src-ip
+interface range fastEthernet 0/1-2
+channel-group 1 mode active
+show running-configure
+
+第二个交换机：
+interface vlan 1
+ip address 192.168.100.2 255.255.255.0
+no shutdown
+port-channel load-balance src-ip
+interface range fastEthernet 0/1-2
+channel-group 2 mode passive
+show running-configure
+
+2 交换机端口与MAC间的通信：
+interface fastethernet0/1
+switchport mode access
+动态绑定：switchport port-security
+静态绑定：switchport port-security
+                switchport port-security mac-address H.H.H
+粘滞绑定:switchport port-security
+	        switchport port-security mac-address sticky
+show running-configure
+
+
+3 DHCP服务器配置：
+ip dhcp pool 名字
+network 与这个交换机所连接的所有vlan地址（例：192.168.10.0） 255.255.255.0
+default-router 192.168.10.1
+dns-server 随便一个网络地址（例：123.123.123.123）
+
+4 rip路由：
+ip routing
+router rip
+network 与这个交换机所连接的所有vlan地址（例：192.168.10.0）
+show ip route
+所要注意的是：两台交换机所划分的vlan地址必须在同一网段下
+
+5 ospf实验：
+router ospf ID(1-65535)
+network 与这个交换机所连接的所有vlan地址（例：192.168.10.0）0.0.0.255(反掩码) area 0
+show port-security address
+
+6 静态路由：
+配置vlan 10,20,30,40,100,200
+两个交换机的vlan 地址必须在同一网络下
+所有配完后
+ip routing
+ip route 192.168.10.0 255.255.255.0 192.168.100.1
+注意：第一个必须是网络号，并且是另一个交换机下vlan 的网络号。第二个是掩码，第三个是与这台交换机相连的交换机的vlan地址
+show ip route
+
