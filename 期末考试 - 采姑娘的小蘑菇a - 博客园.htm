@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+    <meta property="og:description" content="******************软件测试第一次任务******************** 1.狭义软件测试和广义软件测试的概念。 2.软件测试的目的和关键问题。 3.软件测试以不同分类标准如何划">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>期末考试 - 采姑娘的小蘑菇a - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="https://common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon">
+    
+    <link rel="stylesheet" href="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.css">
+    <link id="MainCss" rel="stylesheet" href="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-unlimitedsunlight.css">
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-unlimitedsunlight-mobile.css">
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/LiQingXin/rss">
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/LiQingXin/rsd.xml">
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/LiQingXin/wlwmanifest.xml">
+    <script src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/amp4ads-host-v0.js"></script><script async="" src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/analytics.js"></script><script src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/jquery-2.js"></script>
+    <script src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.js"></script>
+    <script>
+        var currentBlogId = 594386;
+        var currentBlogApp = 'LiQingXin';
+        var cb_enable_mathjax = false;
+        var isLogined = true;
+        var skinName = 'UnlimitedSunlight';
+    </script>
+    
+    
+    
+<link rel="preload" href="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/integrator.js" as="script"><script type="text/javascript" src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/integrator.js"></script><script src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/pubads_impl_2020060103.js" async=""></script></head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/LiQingXin/"><img id="blogLogo" src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/logo.gif" alt="返回主页"></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/LiQingXin/">采姑娘的小蘑菇a</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/LiQingXin/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/LiQingXin/rss/">订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+56&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+0</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/LiQingXin/p/13094337.html">期末考试</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第一次任务********************</span></span></p>
+<p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">1.狭义软件测试和广义软件测试的概念。 </span></span></p>
+<p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">2.软件测试的目的和关键问题。</span></span></p>
+<p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> 3.软件测试以不同分类标准如何划分？</span></span></p>
+<p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> 4.如何测试一个纸杯？分别从功能性、安全性、可靠性、可移植性、兼容性、易用性和用户文档方面进行考虑。</span></span></p>
+<p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">1.狭义软件测试和广义软件测试的概念。</span></span></p>
+<p class="plh0zhr" data-path="1"><span data-path="1,0"><span data-type="leaf" data-path="1,0,0">需求、设计阶段需要对文档的评审，设计框架的审查等都是软件测试的主要内容</span></span></p>
+<p class="plh0zhr" data-path="2"><span data-path="2,0"><span data-type="leaf" data-path="2,0,0">狭义测试从编写代码结束后开始；是识别软缺陷的过程，即实际结果与预期的不一致。</span></span></p>
+<p class="plh0zhr" data-path="3"><span data-path="3,0"><span data-type="leaf" data-path="3,0,0">广义测试是贯穿项目开发始终；指软件生存周期中所有的检查、评审和确认工作，其中包含了对分析、设计阶段，以及完成开发后维护阶段的各类文档、代码的审查和确认。</span></span></p>
+<p class="plh0zhr" data-path="4"><span data-path="4,0"><span data-type="leaf" data-path="4,0,0">&nbsp;</span></span></p>
+<p class="plh0zhr" data-path="5"><span data-path="5,0"><span data-type="leaf" data-path="5,0,0">2.&nbsp;软件测试的目的和关键问题。</span></span></p>
+<p class="plh0zhr" data-path="6"><span data-path="6,0"><span data-type="leaf" data-path="6,0,0">软件测试的目的：</span></span></p>
+<p class="plh0zhr" data-path="7"><span data-path="7,0"><span data-type="leaf" data-path="7,0,0">不仅仅是为了发现软件缺陷与错误，同时也对软件进行度量和评估，提高软件质量</span></span></p>
+<p class="plh0zhr" data-path="8"><span data-path="8,0"><span data-type="leaf" data-path="8,0,0">回避潜在的软件错误和缺陷给软件造成的商业风险</span></span></p>
+<p class="plh0zhr" data-path="9"><span data-path="9,0"><span data-type="leaf" data-path="9,0,0">发现当前开发工作所采用的软件过程的缺陷，修改软件开发规则</span></span></p>
+<p class="plh0zhr" data-path="10"><span data-path="10,0"><span data-type="leaf" data-path="10,0,0">对软件质量进行度量和评估</span></span></p>
+<p class="plh0zhr" data-path="11"><span data-path="11,0"><span data-type="leaf" data-path="11,0,0">&nbsp;</span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-type="leaf" data-path="12,0,0">关键问题：</span></span></p>
+<p class="plh0zhr" data-path="13"><span data-path="13,0"><span data-type="leaf" data-path="13,0,0">软件测试是为了证伪而非证真</span></span></p>
+<p class="plh0zhr" data-path="14"><span data-path="14,0"><span data-type="leaf" data-path="14,0,0">尽早地不断地进行软件测试</span></span></p>
+<p class="plh0zhr" data-path="15"><span data-path="15,0"><span data-type="leaf" data-path="15,0,0">重视无效数据和非预期使用习惯的测试</span></span></p>
+<p class="plh0zhr" data-path="16"><span data-path="16,0"><span data-type="leaf" data-path="16,0,0">程序员应避免检查自己的程序</span></span></p>
+<p class="plh0zhr" data-path="17"><span data-path="17,0"><span data-type="leaf" data-path="17,0,0">充分注意测试中的群集现象</span></span></p>
+<p class="plh0zhr" data-path="18"><span data-path="18,0"><span data-type="leaf" data-path="18,0,0">用例要定期评审</span></span></p>
+<p class="plh0zhr" data-path="19"><span data-path="19,0"><span data-type="leaf" data-path="19,0,0">应当对每一个测试结果做全面检查</span></span></p>
+<p class="plh0zhr" data-path="20"><span data-path="20,0"><span data-type="leaf" data-path="20,0,0">测试现场保护和资料归档</span></span></p>
+<p class="plh0zhr" data-path="21"><span data-path="21,0"><span data-type="leaf" data-path="21,0,0">软件测试的经济型原则</span></span></p>
+<p class="plh0zhr" data-path="22">&nbsp;</p>
+<p class="plh0zhr" data-path="23"><span data-path="23,0"><span data-type="leaf" data-path="23,0,0">3.&nbsp;软件测试以不同分类标准如何划分？</span></span></p>
+<p class="plh0zhr" data-path="24"><span data-path="24,0"><span data-type="leaf" data-path="24,0,0">按开发阶段划分：单元测试、集成测试、系统测试、验收测试</span></span></p>
+<p class="plh0zhr" data-path="25"><span data-path="25,0"><span data-type="leaf" data-path="25,0,0">按是否运行：静态测试、动态测试</span></span></p>
+<p class="plh0zhr" data-path="26"><span data-path="26,0"><span data-type="leaf" data-path="26,0,0">按是否查看原代码：白盒测试、黑盒测试（按功能测试分为逻辑功能测试、界面测试、易用性测试、安装测试、兼容性测试分为一般性能测试、稳定性能测试、负载测试、压力测试）</span></span></p>
+<p class="plh0zhr" data-path="27"><span data-path="27,0"><span data-type="leaf" data-path="27,0,0">其他：回归测试、冒烟测试、随机测试</span></span></p>
+<p class="plh0zhr" data-path="28">&nbsp;</p>
+<p class="plh0zhr" data-path="29"><span data-path="29,0"><span data-type="leaf" data-path="29,0,0">4.&nbsp;如何测试一个纸杯？分别从功能性、安全性、可靠性、可移植性、兼容性、易用性和用户文档方面进行考虑。</span></span></p>
+<p class="plh0zhr" data-path="30"><span data-path="30,0"><span data-type="leaf" data-path="30,0,0">功能性：用水杯装水看漏不漏；水能不能被喝到</span></span></p>
+<p class="plh0zhr" data-path="31"><span data-path="31,0"><span data-type="leaf" data-path="31,0,0">安全性：杯子有没有毒或细菌</span></span></p>
+<p class="plh0zhr" data-path="32"><span data-path="32,0"><span data-type="leaf" data-path="32,0,0">可靠性：杯子从不同高度落下的损坏程度</span></span></p>
+<p class="plh0zhr" data-path="33"><span data-path="33,0"><span data-type="leaf" data-path="33,0,0">可移植性：杯子在不同的地方、温度等环境下是否都可以正常使用</span></span></p>
+<p class="plh0zhr" data-path="34"><span data-path="34,0"><span data-type="leaf" data-path="34,0,0">兼容性：杯子是否能够容纳果汁、白水、酒精、汽油等</span></span></p>
+<p class="plh0zhr" data-path="35"><span data-path="35,0"><span data-type="leaf" data-path="35,0,0">易用性：杯子是否烫手、是否有防滑措施、是否方便饮用</span></span></p>
+<p class="plh0zhr" data-path="36"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0">用户文档：使用手册是否对杯子的用法、限制、使用条件等有详细描述</span></span></p>
+<p class="plh0zhr" data-path="36"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第二次任务********************</span></span></span></span></p>
+<p class="plh0zhr" data-path="36"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611161607006-1204249127.jpg" loading="lazy" width="353" height="400"></span></span></span></span></p>
+<p class="plh0zhr" data-path="36">&nbsp;</p>
+<p class="plh0zhr" data-path="36">1.<img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611161713684-149881384.jpg" loading="lazy" width="478" height="450"></p>
+<p class="plh0zhr" data-path="36">&nbsp;</p>
+<p class="plh0zhr" data-path="2"><span data-path="2,0"><span data-type="leaf" data-path="2,0,0" data-spm-anchor-id="0.0.0.i0.8c22RjRVRjRVIq">2.软件质量的特性</span></span></p>
+<p class="plh0zhr" data-path="3"><span data-path="3,0"><span data-type="leaf" data-path="3,0,0">静态质量特性</span></span></p>
+<p class="plh0zhr" data-path="4"><span data-path="4,0"><span data-type="leaf" data-path="4,0,0">代码：构化的 可维护的 可测试的</span></span></p>
+<p class="plh0zhr" data-path="5"><span data-path="5,0"><span data-type="leaf" data-path="5,0,0">文档：正确的 完整的 </span></span></p>
+<p class="plh0zhr" data-path="6"><span data-path="6,0"><span data-type="leaf" data-path="6,0,0">动态质量特性</span></span></p>
+<p class="plh0zhr" data-path="7"><span data-path="7,0"><span data-type="leaf" data-path="7,0,0">正确性 可靠性 完整性 一致性 易用性 性能</span></span></p>
+<p class="plh0zhr" data-path="8"><span data-path="8,0"><span data-type="leaf" data-path="8,0,0">3.【1-（（13-7+1）/（20-0+1））】%=66.7%</span></span></p>
+<p class="plh0zhr" data-path="9"><span data-path="9,0"><span data-type="leaf" data-path="9,0,0">4.A</span></span></p>
+<p class="plh0zhr" data-path="10"><span data-path="10,0"><span data-type="leaf" data-path="10,0,0">5.软件中存在的故障与发现的故障数成(正比)</span></span></p>
+<p class="plh0zhr" data-path="11"><span data-path="11,0"><span data-type="leaf" data-path="11,0,0">6.软件测试停止的准则</span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-type="leaf" data-path="12,0,0">基于测试阶段的原则 </span></span></p>
+<p class="plh0zhr" data-path="13"><span data-path="13,0"><span data-type="leaf" data-path="13,0,0">基于测试用例的原则 </span></span></p>
+<p class="plh0zhr" data-path="14"><span data-path="14,0"><span data-type="leaf" data-path="14,0,0">基于缺陷收敛趋势及缺陷修复率原则 </span></span></p>
+<p class="plh0zhr" data-path="15"><span data-path="15,0"><span data-type="leaf" data-path="15,0,0">基于验收测试原则 </span></span></p>
+<p class="plh0zhr" data-path="16"><span data-path="16,0"><span data-type="leaf" data-path="16,0,0">基于覆盖率的原则 </span></span></p>
+<p class="plh0zhr" data-path="17"><span data-path="17,0"><span data-type="leaf" data-path="17,0,0">软件项目暂停或终止，则调试活动也相应的暂停或停止</span></span></p>
+<p class="plh0zhr" data-path="17"><span data-path="17,0"><span data-type="leaf" data-path="17,0,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第三次任务********************</span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="17"><span data-path="17,0"><span data-type="leaf" data-path="17,0,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611161915386-1892524639.jpg" loading="lazy" width="680" height="502"></span></span></span></span></span></span></p>
+<p>深度优先：第一种是一头扎到底的玩法。我们选择一条支路，尽可能不断地深入，如果遇到死路就往回退，回退过程中如果遇到没探索过的支路，就进入该支路继续深入。</p>
+<p>广度优先：又叫层次遍历，从上往下对每一层依次访问，在每一层中，从左往右（也可以从右往左）访问结点，访问完一层就进入下一层，直到没有结点可以访问为止。</p>
+<p class="plh0zhr" data-path="17"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611162050976-1525943121.jpg" loading="lazy" width="600" height="600"></p>
+<p class="plh0zhr" data-path="17"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第四次任务********************</span></span></span></span></p>
+<p class="plh0zhr" data-path="0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.6cbdu6Sbu6Sbdc">1.静态白盒测试的方法？</span></span></p>
+<p class="plh0zhr" data-path="1"><span data-path="1,0"><span data-type="leaf" data-path="1,0,0">同事审查</span></span></p>
+<p class="plh0zhr" data-path="2"><span data-path="2,0"><span data-type="leaf" data-path="2,0,0">走查</span></span></p>
+<p class="plh0zhr" data-path="3"><span data-path="3,0"><span data-type="leaf" data-path="3,0,0">检查（最正式的审查类型）</span></span></p>
+<p class="plh0zhr" data-path="3"><span data-path="3,0"><span data-type="leaf" data-path="3,0,0"> 2.白盒测试和黑盒测试都是既有静态的又有动态的。（X）</span></span></p>
+<p class="plh0zhr" data-path="4"><span data-path="4,0"><span data-type="leaf" data-path="4,0,0">黑盒测试都是动态测试， </span></span></p>
+<p class="plh0zhr" data-path="4"><span data-path="4,0"><span data-type="leaf" data-path="4,0,0">3.静态黑盒测试的方法？</span></span></p>
+<p class="plh0zhr" data-path="5"><span data-path="5,0"><span data-type="leaf" data-path="5,0,0">需求文档测试</span></span></p>
+<p class="plh0zhr" data-path="6"><span data-path="6,0"><span data-type="leaf" data-path="6,0,0">用户文档测试</span></span></p>
+<p class="plh0zhr" data-path="7"><span data-path="7,0"><span data-type="leaf" data-path="7,0,0">产品说明书测试 </span></span></p>
+<p class="plh0zhr" data-path="7"><span data-path="7,0"><span data-type="leaf" data-path="7,0,0">4.需求设计说明书的书写步骤</span></span></p>
+<p class="plh0zhr" data-path="8"><span data-path="8,0"><span data-type="leaf" data-path="8,0,0">确定系统的综合要求</span></span></p>
+<p class="plh0zhr" data-path="9"><span data-path="9,0"><span data-type="leaf" data-path="9,0,0">分析系统的数据要求</span></span></p>
+<p class="plh0zhr" data-path="10"><span data-path="10,0"><span data-type="leaf" data-path="10,0,0">导出系统的逻辑模型</span></span></p>
+<p class="plh0zhr" data-path="11"><span data-path="11,0"><span data-type="leaf" data-path="11,0,0">修正开发计划</span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-type="leaf" data-path="12,0,0">书写文档</span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第五次任务********************</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611162349183-609590250.jpg" loading="lazy" width="900" height="400"></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12">1.什么是测试用例<br><br>测试用例是测试工作的指导，是软件测试的必须遵守的准则，更是软件测试质量稳定的根本保证<br><br>指的是在测试之前设计的一套详细的测试方案，包括测试环境、测试步骤、测试数据和预期结果。</p>
+<p class="plh0zhr" data-path="12">其好坏直接决定了测试的效果和结果。所以说在软件测试活动中最关键的步骤就是设计有效的测试用例。其既可以争对黑盒测试设计用例，也可争对白盒测试<br><br>2.好的测试用例有什么特征<br><br>可以最大程度地找出软件隐藏地缺陷<br><br>可以最高效率地找出软件缺陷<br><br>可以最大程度地满足测试覆盖要求<br><br>既不过分复杂，也不能过分简单<br><br>使软件缺陷的表现可以清楚地判定<br><br>（测试用例包含期望的正确的结果<br><br>待查的输出结果或文件必须尽量简单明了）<br><br>不包含重复的测试用例<br><br>测试用例内容清晰、格式一致、分类组织<br><br></p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611222018680-1982545001.jpg" loading="lazy" width="600" height="800"></p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611222109118-1228600313.jpg" loading="lazy" width="600" height="800"></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第六次任务********************</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611162454797-1522331329.jpg" loading="lazy" width="500" height="889"></span></p>
+<p class="plh0zhr" data-path="12">下列链接中找到合适的正交表： <a class="swift-ui-complex-text-link" href="http://support.sas.com/techsup/technote/ts723_Designs.txt" target="_blank">http://support.sas.com/techsup/technote/ts723_Designs.txt</a></p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611222255184-1602490410.jpg" loading="lazy" width="450" height="600"></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">&nbsp;</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第七次任务********************</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611165449493-1523374912.jpg" loading="lazy" width="500" height="888"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12">&nbsp;</p>
+<p class="plh0zhr" data-path="12">语句覆盖：选择足够多的测试数据使得被测程序中每条语句至少执行一次</p>
+<p class="plh0zhr" data-path="12">条件覆盖I:构建一组测试用例，使得每一个判定语句中每一个子逻辑条件的可能值至少满足一次</p>
+<p class="plh0zhr" data-path="12">路径覆盖：</p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611214603289-1371632727.jpg" loading="lazy" width="525" height="700"></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第八次任务********************</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611165605319-1754978104.png" loading="lazy" width="450" height="800"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12">&nbsp;</p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611214904109-1277880868.jpg" loading="lazy" width="504" height="700"></p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611221442496-1440922751.jpg" loading="lazy" width="500" height="281"></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第九次任务********************</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">1.软件测试的阶段</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">4.需求规格说明书检查的内容。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">7.测试计划的内容</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611165142854-1058240552.jpg" loading="lazy" width="500" height="1199"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12">&nbsp;</p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第十次任务********************</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><br>1.基于需求的软件测试重点关注哪两方面的问题？<br><br>验证需求是否正确、完整、无二义性，并且逻辑一致<br><br>要从“黑盒”的角度，设计出充分并且必要的测试集，以保证设计和代码都能完全符合需求<br><br>2.测试用例的选择需考虑哪些因素？<br><br>本次测试的上下文：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是第一次测试，还是回归测试？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 测试持续的时间有多长？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 自动化脚本的准备情况怎么样了？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果等到最后才做性能测试，是否会加大修改的难度<br>测试的分工<br><br>3.软件测试中对环境的测试包含什么？<br>测试数据、测试机器、网络环境、安装包、操作系统<br><br>4.冒烟测试的概念。<br>电路板测试得来<br>是对软件基本的功能进行测试，目的是确认软件基本的功能正常，保证软件系统能跑的起来<br></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第十一次任务********************</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">1.软件的度量和软件测试的度量<br>软件的度量：对软件产品自身的测量<br>产生软件产品过程的测量<br>软件测试的度量：对软件测试的产出物<br>测试的过程的测量</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> 2.测试度量的难度是什么？<br>不能直接从产品的质量反映测试的效果<br>应该从软件产品的度量转移到测试产出物的度量，以及测试过程的度量 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">3.填空：</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> （1）代码覆盖率是指（测试执行遍历了代码的哪些区域，测试执行经过的代码行数与总的代码行数的比例）。 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">（2）（开发人员、QA、测试管理者）可以对测试人员进行评价。 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">（3）功能模块覆盖率的公式是（（已执行测试的功能模块数/总的功能模块数）*100%）。</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> （4）数据库覆盖率是（测试人员测试的功能模块对数据库表的访问面积的覆盖率）。</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> 4.bug综合评价模型中的因素是什么？<br>数量、质量、定量、定性、测试过程、测试人员</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"> 5.在同一个项目中，A，B测试人员参与同样的测试工作，两人的测试数据如下：</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">（1，轻微；2低；3，中；4，高） 测试人员A：发现级别是1的缺陷150个，发现级别为2的缺陷200个，</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">发现级别是3的缺陷260个； 测试人员B：发现级别是1的缺陷200个，发现级别为2的缺陷180个，发现级别是3的缺陷300个； 试通过加权的方法计算A，B两人统计的缺陷数。<img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611164033102-922151631.jpg" loading="lazy" width="533" height="400"><br><br></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第十二次任务********************</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">看Hyman分别测试法和利用植入故障法估算程序中原有故障总数，计算下面这两道题。 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">（1）两个小组独立地测试同一个程序，第一组发现25个错误，第二组发现30个错误，在两个小组发现的错误中有15个是共同的，</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">那么可以估计程序中的错误总数是 ___个。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">&nbsp; A．25 B．30 C．50 D．60 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">（2）测试某程序时人为地植入的错误数为20，测试之后发现50个错误，其中10个植入的错误。</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">如果认为测试方案发现植入错误和发现原有错误的能力相同，则能估出程序中原有错误的总数是（ ）个。</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">1)Hyman分别测试法 B0=(B1*B2)/bc=25*30/15=50<br><br>测试员甲发现的故障总数B1<br><br>测试员乙发现的故障总数B2<br><br>两人发现的相同故障数目bc<br><br>(2)植入故障法 N=(Ns/ns)*n=(50-10)*20/10=80<br><br>Ns在测试前人为的向程序中植入的故障数<br><br>ns是经过一段时间测试后发现的播种故障的数目<br><br>n是在测试中又发现的程序原有故障数<br><br></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">******************软件测试第十四次任务********************</span></span></span></span></span></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">1.自动化测试的局限性</span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611163427810-832274143.jpg" alt="" loading="lazy"></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">4.自动化测试工具的特征 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611163443404-2074082350.jpg" alt="" loading="lazy"></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23">5.软件兼容性测试的内容 </span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><span data-path="12,0"><span data-path="36,0"><span data-type="leaf" data-path="36,0,0"><span data-path="0,0"><span data-type="leaf" data-path="0,0,0" data-spm-anchor-id="0.0.0.i0.79cd9A6Z9A6Z23"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611163453940-1044275578.jpg" alt="" loading="lazy"></span></span></span></span></span></p>
+<p class="plh0zhr" data-path="12"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/2000980-20200611163503947-1192343158.jpg" alt="" loading="lazy"></p>
+<p>&nbsp;</p>
+<p class="plh0zhr" data-path="12">&nbsp;</p>
+<p class="plh0zhr" data-path="12">&nbsp;</p>
+<p class="plh0zhr" data-path="36">&nbsp;</p>
+<p class="plh0zhr" data-path="36">&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block"><div id="BlogPostCategory">
+    分类: 
+            <a href="https://www.cnblogs.com/LiQingXin/category/1765831.html" target="_blank">数据可视化</a>,             <a href="https://www.cnblogs.com/LiQingXin/category/1785310.html" target="_blank">软件测试</a></div>
+
+
+    <div id="blog_post_info">
+<div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(13094337,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+        <a id="green_channel_follow" onclick="follow('4969581c-18f8-43e3-cfd7-08d7d7b4fe7b');" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/LiQingXin/" target="_blank"><img src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/20200408162315.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/LiQingXin/">采姑娘的小蘑菇a</a><br>
+            <a href="https://home.cnblogs.com/u/LiQingXin/followees/">关注 - 0</a><br>
+            <a href="https://home.cnblogs.com/u/LiQingXin/followers/">粉丝 - 0</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow('4969581c-18f8-43e3-cfd7-08d7d7b4fe7b');return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(13094337,'Digg')">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(13094337,'Bury')">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+    <div class="clear"></div>
+    <div id="post_next_prev">
+
+    <a href="https://www.cnblogs.com/LiQingXin/p/13093924.html" class="p_n_p_prefix">« </a> 上一篇：    <a href="https://www.cnblogs.com/LiQingXin/p/13093924.html" title="发布于 2020-06-11 16:13">学堂在线软件测试答案(西北工业大学)</a>
+
+</div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-06-11 16:57</span>&nbsp;
+<a href="https://www.cnblogs.com/LiQingXin/">采姑娘的小蘑菇a</a>&nbsp;
+阅读(<span id="post_view_count">30</span>)&nbsp;
+评论(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=13094337" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(13094337);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/highlight.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 594386, cb_blogApp = 'LiQingXin', cb_blogUserGuid = '4969581c-18f8-43e3-cfd7-08d7d7b4fe7b';
+    var cb_entryId = 13094337, cb_entryCreatedDate = '2020-06-11 16:57', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container" style="visibility: visible;"><script type="text/javascript" src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/mention.js"></script>
+<div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<div class="commentbox_main comment_textarea">
+    <div class="commentbox_title">
+        <div class="commentbox_title_left">
+            <span id="btn_edit_comment" class="commentbox_tab active" title="编辑评论">编辑</span>
+            <span id="btn_preview_comment" class="commentbox_tab" title="Markdown 预览">预览</span>
+        </div>
+        <div class="commentbox_title_right">
+            <span id="ubb_bold" class="comment_icon" alt="粗体" title="添加粗体(Ctrl + B)">
+                <svg class="comment_svg" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd">
+                        <path d="m13.221 19c1.4414 0 2.5793-0.27451 3.3759-0.82353 0.92931-0.66667 1.4034-1.7059 1.4034-3.1176 0-0.94118-0.22759-1.7059-0.66379-2.2549-0.45517-0.56863-1.119-0.94118-2.0103-1.1176 0.68276-0.27451 1.1948-0.64706 1.5552-1.1569 0.36034-0.54902 0.55-1.2157 0.55-2 0-1.0588-0.36034-1.902-1.0621-2.5294-0.75862-0.66667-1.8207-1-3.1672-1h-6.2017v14h6.2207zm-0.82196-8h-3.3987v-4h3.4367c0.91139 0 1.557 0.15686 1.9747 0.47059 0.37975 0.29412 0.58861 0.78431 0.58861 1.451 0 0.72549-0.20886 1.2549-0.58861 1.5882-0.39873 0.31373-1.0633 0.4902-2.0127 0.4902zm0.52612 6h-3.9249v-4h3.9855c1.052 0 1.8208 0.16216 2.3064 0.48649 0.46532 0.32432 0.70809 0.84685 0.70809 1.5856 0 0.72072-0.3237 1.2252-0.9711 1.5495-0.50578 0.25225-1.2139 0.37838-2.104 0.37838z" fill-rule="nonzero" stroke-width=".35"></path>
+                    </g>
+                </svg>
+            </span>
+            <span id="ubb_url" class="comment_icon" title="添加链接(Ctrl + K)" alt="链接">
+                <svg class="comment_svg comment_svg_stroke" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd">
+                        <g transform="translate(4 4)" fill-rule="nonzero" stroke-width=".4">
+                            <path d="m6.304 9.696c-0.288-0.288-0.512-0.608-0.704-0.992-0.16-0.32-0.032-0.704 0.288-0.864 0.32-0.16 0.704-0.032 0.864 0.288 0.128 0.224 0.256 0.448 0.448 0.64 0.928 0.928 2.432 0.928 3.36 0l3.36-3.328c0.928-0.928 0.928-2.432 0-3.36s-2.432-0.928-3.36 0l-2.272 2.272c-0.256 0.256-0.64 0.256-0.896 0-0.256-0.256-0.256-0.64 0-0.896l2.272-2.272c1.44-1.44 3.744-1.44 5.184 0 1.44 1.44 1.44 3.744 0 5.184l-3.36 3.296c-0.704 0.704-1.632 1.088-2.592 1.088-0.928 0-1.856-0.352-2.592-1.056z"></path>
+                            <path d="m3.776 15.808c-0.992 0-1.888-0.384-2.592-1.056-1.44-1.44-1.44-3.744 0-5.184l3.328-3.328c1.44-1.44 3.744-1.44 5.184 0 0.288 0.288 0.544 0.64 0.736 1.024 0.16 0.32 0 0.704-0.32 0.864-0.32 0.16-0.704 0-0.864-0.32-0.128-0.256-0.288-0.48-0.48-0.672-0.928-0.928-2.432-0.928-3.36 0l-3.296 3.328c-0.928 0.928-0.928 2.432 0 3.36 0.448 0.448 1.056 0.704 1.664 0.704 0.608 0 1.248-0.256 1.664-0.704l2.112-2.112c0.256-0.256 0.64-0.256 0.896 0s0.256 0.64 0 0.896l-2.112 2.112c-0.672 0.704-1.568 1.088-2.56 1.088z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+            <span id="ubb_code" class="comment_icon" title="添加代码(Ctrl + `)" alt="代码">
+                <svg class="comment_svg comment_svg_stroke" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd">
+                        <g transform="translate(16 6)" stroke-linecap="round" stroke-width="2">
+                            <line x1=".5" x2="4.5" y1=".7" y2="6.3"></line>
+                            <line transform="translate(2.5 9.1) scale(1 -1) translate(-2.5 -9.1)" x1=".5" x2="4.5" y1="6.3" y2="11.9"></line>
+                        </g>
+                        <g transform="translate(3 6.1)" stroke-linecap="round" stroke-width="2">
+                            <line transform="translate(2.5 3.5) scale(-1 1) translate(-2.5 -3.5)" x1=".5" x2="4.5" y1=".7" y2="6.3"></line>
+                            <line transform="translate(2.5 9.1) scale(-1) translate(-2.5 -9.1)" x1=".5" x2="4.5" y1="6.3" y2="11.9"></line>
+                        </g>
+                        <path transform="translate(12 12.5) scale(1 -1) translate(-12 -12.5)" d="m10.778 7.1249c0.50008-0.11366 0.9978 0.16911 1.1643 0.64128l0.032406 0.11223 2 8.8c0.1224 0.53855-0.21496 1.0744-0.75351 1.1968-0.50008 0.11366-0.9978-0.16911-1.1643-0.64128l-0.032406-0.11223-2-8.8c-0.1224-0.53855 0.21496-1.0744 0.75351-1.1968z" fill-rule="nonzero" stroke-width=".25"></path>
+                    </g>
+                </svg>
+            </span>
+            <span id="ubb_quote" class="comment_icon" title="添加引用(Ctrl + Q)" alt="引用">
+                <svg class="comment_svg" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd">
+                        <g transform="translate(5 4)" fill-rule="nonzero" stroke-width=".25">
+                            <path d="m5.0013 15v-5.2702h-2.8008c-0.13413-3.3762 1.2004-6.2143 4.0009-8.5135l-1.2-1.2163c-3.335 2.2996-5.0013 5.8119-5.0013 10.54v4.4595h5.0013-1.285e-5zm8.7987 0v-5.2702h-2.8008c-0.13453-3.3762 1.2-6.2143 4.0009-8.5135l-1.2-1.2163c-3.335 2.2996-5.0013 5.8119-5.0013 10.54v4.4595h5.0013-1.28e-5z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+            <span id="ubb_img" class="comment_icon" alt="图片" title="上传图片(Ctrl + I)">
+                <svg class="comment_svg" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="evenodd">
+                        <g transform="translate(3 3.8)" fill-rule="nonzero">
+                            <path d="m14.1 0.58235h-11.2c-1.32 0-2.4 1.0482-2.4 2.3294v10.871c0 1.2812 1.08 2.3294 2.4 2.3294h11.2c1.32 0 2.4-1.0482 2.4-2.3294v-10.871c0-1.2812-1.08-2.3294-2.4-2.3294zm0.7 13.569-3.63-3.4165 1.33-1.2909c0.21-0.20382 0.59-0.20382 0.8 0l1.6 1.5529v2.7856c0 0.13588-0.04 0.26206-0.1 0.36882zm-11.9-12.016h11.2c0.44 0 0.8 0.34941 0.8 0.77647v5.8915l-0.47-0.45618c-0.84-0.825-2.22-0.825-3.07 0l-1.35 1.3103-2.39-2.2421c-0.85-0.825-2.22-0.825-3.05-0.019412l-2.48 2.2615v-6.7456c0.01-0.42706 0.37-0.77647 0.81-0.77647zm-0.8 11.647v-1.9897l3.6-3.2806c0.21-0.20382 0.58-0.21353 0.81 0.0097059l6.43 6.0371h-10.04c-0.44 0-0.8-0.33971-0.8-0.77647z"></path>
+                            <ellipse cx="10.5" cy="6.4059" rx="1" ry="1"></ellipse>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div style="display:none">
+        <span id="comment_edit_id"></span>
+        <span id="span_parentcomment_id"></span>
+        <span id="span_parent_id"></span>
+        <span id="span_comment_replyto"></span>
+        <span id="span_comment_posted"></span>
+        <span id="span_current_user_id">a4b2bf24-a3a6-4f9e-f69b-08d62f09a51e</span>
+    </div>
+    <textarea id="tbCommentBody" placeholder="支持 Markdown"></textarea>
+    <div id="tbCommentBodyPreview" class="feedbackCon" style="display: none">
+        <div id="tbCommentBodyPreviewBody" class="blog_comment_body comment_preview cnblogs-markdown"></div>
+    </div>
+    <div class="commentbox_footer">
+        <a class="comment_option">Markdown 帮助</a>
+        <span id="btn_comment_options" class="comment_option">
+            <input id="ubb_auto_completion" class="inline_middle" type="checkbox">
+            <label class="inline_middle" for="ubb_auto_completion">自动补全</label>
+        </span>
+    </div>
+</div>
+<p id="commentbox_opt">
+    <input id="btn_comment_submit" type="button" class="comment_btn" title="提交评论(Ctrl + Enter)" value="提交评论">
+    <span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+    <a href="javascript:void(0);" onclick="return logout();">退出</a>
+            <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<div id="tip_comment2" style="color:Red"></div>
+<p>[Ctrl+Enter快捷键提交]</p>
+<script>var commentEditor = initCommentEditor("tbCommentBody");</script>
+</div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"><a href="https://www.wenjuan.com/s/3uIjeq0/" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'T2-博客园问卷调查')">【推荐】了解你才能更懂你，博客园首发问卷调查，助力社区新升级</a><br><a href="http://www.ucancode.com/index.htm" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'T2-ucancode')">【推荐】超50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="https://developer.aliyun.com/article/754053?utm_content=g_1000133217" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'T2-阿里云开发者社区')">【推荐】30+视频&amp;10+案例纵横文件与IO领域 | Java开发者高级应用站</a><br></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%20-%20%E9%87%87%E5%A7%91%E5%A8%98%E7%9A%84%E5%B0%8F%E8%98%91%E8%8F%87a%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;" data-google-query-id="CNL3nNGN--kCFU8EXAodac8AmA"><div id="google_ads_iframe_/1090369/C1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C1_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C1_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" srcdoc="" data-google-container-id="1" data-load-complete="true" width="300" height="250" frameborder="0"></iframe></div></div>
+    </div>
+    <div id="under_post_news"><div class="recomm-block"><b>相关博文：</b><br>·  <a title="java期末考试" href="https://www.cnblogs.com/gaotian250yj912/p/11994160.html" target="_blank" onclick="clickRecomItmem(11994160)">java期末考试</a><br>·  <a title="汇编期末考试" href="https://www.cnblogs.com/javabai/p/10984340.html" target="_blank" onclick="clickRecomItmem(10984340)">汇编期末考试</a><br>·  <a title="期末考试总结" href="https://www.cnblogs.com/02xiaoma/archive/2012/07/06/2579651.html" target="_blank" onclick="clickRecomItmem(2579651)">期末考试总结</a><br>·  <a title="期末考试复习" href="https://www.cnblogs.com/emilyyogurt/p/9153361.html" target="_blank" onclick="clickRecomItmem(9153361)">期末考试复习</a><br>·  <a title="Java  期末考试" href="https://www.cnblogs.com/liushuncheng/p/7112933.html" target="_blank" onclick="clickRecomItmem(7112933)">Java  期末考试</a><br>»  <a target="_blank" href="https://recomm.cnblogs.com/blogpost/13094337">更多推荐...</a></div></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;" data-google-query-id="CNP3nNGN--kCFU8EXAodac8AmA"><div id="google_ads_iframe_/1090369/C2_0__container__" style="border: 0pt none; width: 468px; height: 60px;"></div></div>
+    </div>
+    <div id="under_post_kb">
+<div class="itnews c_ad_block">
+    <b>最新 IT 新闻</b>:
+    <br>
+ ·              <a href="https://news.cnblogs.com/n/663970/" target="_blank">无论你喜不喜欢，即刻都不会再“变黑”了</a>
+            <br>
+ ·              <a href="https://news.cnblogs.com/n/663971/" target="_blank">上午敲钟晚上带货 丁磊的带货“野”心</a>
+            <br>
+ ·              <a href="https://news.cnblogs.com/n/663949/" target="_blank">分析了上千张照片发现：R语言程序员最快乐，Java开发者最年轻</a>
+            <br>
+ ·              <a href="https://news.cnblogs.com/n/663972/" target="_blank">网易“归来”： 除了游戏，什么业务能撑起下一个20年？</a>
+            <br>
+ ·              <a href="https://news.cnblogs.com/n/663969/" target="_blank">五月份，加密货币衍生品交易量创下6020亿美元的纪录</a>
+            <br>
+    » <a href="https://news.cnblogs.com/" title="IT 新闻" target="_blank">更多新闻...</a>
+</div></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem"><!--done-->
+<h3 class="catListTitle">公告</h3>
+
+<div id="blog-news">
+    
+    <div id="profile_block">
+        昵称：
+        <a href="https://home.cnblogs.com/u/LiQingXin/">
+            采姑娘的小蘑菇a
+        </a>
+        <br>
+        园龄：
+        <a href="https://home.cnblogs.com/u/LiQingXin/" title="入园时间：2020-04-08">
+            2个月
+        </a>
+        <br>
+        粉丝：
+        <a href="https://home.cnblogs.com/u/LiQingXin/followers/">
+            0
+        </a>
+        <br>
+        关注：
+        <a href="https://home.cnblogs.com/u/LiQingXin/followees/">
+            0
+        </a>
+        <div id="p_b_follow">
+<a href="javascript:void(0)" onclick="follow('4969581c-18f8-43e3-cfd7-08d7d7b4fe7b')">+加关注</a></div>
+        <script>getFollowStatus('4969581c-18f8-43e3-cfd7-08d7d7b4fe7b');</script>
+    </div>
+</div>
+
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="">
+
+<table id="blogCalendar" class="Cal" title="Calendar" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td colspan="7">
+                <table class="CalTitle" cellspacing="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td class="CalNextPrev">
+                                <a href="javascript:void(0);" onclick="loadBlogCalendar('2020/05/12'); return false;">&lt;</a>
+                            </td>
+                            <td align="center">2020年6月</td>
+                            <td class="CalNextPrev" align="right">
+                                <a href="javascript:void(0);" onclick="loadBlogCalendar('2020/07/12'); return false;">&gt;</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+                    <th class="CalDayHeader" abbr="日" scope="col" align="center">日</th>
+                    <th class="CalDayHeader" abbr="一" scope="col" align="center">一</th>
+                    <th class="CalDayHeader" abbr="二" scope="col" align="center">二</th>
+                    <th class="CalDayHeader" abbr="三" scope="col" align="center">三</th>
+                    <th class="CalDayHeader" abbr="四" scope="col" align="center">四</th>
+                    <th class="CalDayHeader" abbr="五" scope="col" align="center">五</th>
+                    <th class="CalDayHeader" abbr="六" scope="col" align="center">六</th>
+        </tr>
+            <tr>
+                            <td class="CalOtherMonthDay" align="center">31</td>
+                        <td class="" align="center">
+                            <a href="https://www.cnblogs.com/LiQingXin/archive/2020/06/01.html"><u>1</u></a>
+                        </td>
+                        <td class="" align="center">
+                            2
+                        </td>
+                        <td class="" align="center">
+                            <a href="https://www.cnblogs.com/LiQingXin/archive/2020/06/03.html"><u>3</u></a>
+                        </td>
+                        <td class="" align="center">
+                            4
+                        </td>
+                        <td class="" align="center">
+                            <a href="https://www.cnblogs.com/LiQingXin/archive/2020/06/05.html"><u>5</u></a>
+                        </td>
+                    <td class="CalWeekendDay" align="center">
+                        <a href="https://www.cnblogs.com/LiQingXin/archive/2020/06/06.html"><u>6</u></a>
+                    </td>
+            </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            7
+                        </td>
+                            <td class="" align="center">
+                                8
+                            </td>
+                            <td class="" align="center">
+                                9
+                            </td>
+                            <td class="" align="center">
+                                <a href="https://www.cnblogs.com/LiQingXin/archive/2020/06/10.html"><u>10</u></a>
+                            </td>
+                            <td class="" align="center">
+                                <a href="https://www.cnblogs.com/LiQingXin/archive/2020/06/11.html"><u>11</u></a>
+                            </td>
+                            <td class="CalTodayDay" align="center">
+                                12
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            13
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            14
+                        </td>
+                            <td class="" align="center">
+                                15
+                            </td>
+                            <td class="" align="center">
+                                16
+                            </td>
+                            <td class="" align="center">
+                                17
+                            </td>
+                            <td class="" align="center">
+                                18
+                            </td>
+                            <td class="" align="center">
+                                19
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            20
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            21
+                        </td>
+                            <td class="" align="center">
+                                22
+                            </td>
+                            <td class="" align="center">
+                                23
+                            </td>
+                            <td class="" align="center">
+                                24
+                            </td>
+                            <td class="" align="center">
+                                25
+                            </td>
+                            <td class="" align="center">
+                                26
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            27
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            28
+                        </td>
+                            <td class="" align="center">
+                                29
+                            </td>
+                            <td class="" align="center">
+                                30
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                1
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                2
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                3
+                            </td>
+                        <td class="CalOtherMonthDay" align="center">
+                            4
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalOtherMonthDay" align="center">
+                            5
+                        </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                6
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                7
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                8
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                9
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                10
+                            </td>
+                        <td class="CalOtherMonthDay" align="center">
+                            11
+                        </td>
+                </tr>
+    </tbody>
+</table></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn">
+<!-- 搜索 -->
+<div id="sidebar_search" class="sidebar-block">
+    <div id="sidebar_search" class="mySearch">
+        <h3 class="catListTitle">搜索</h3>
+        <div id="sidebar_search_box">
+            <div id="widget_my_zzk" class="div_my_zzk">
+                <input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk">
+            </div>
+            <div id="widget_my_google" class="div_my_zzk">
+                <input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 常用链接 -->
+<div id="sidebar_shortcut" class="sidebar-block">
+    <div class="catListLink">
+<h3 class="catListTitle">
+常用链接
+</h3>
+<ul>
+		<li>
+
+<a href="https://www.cnblogs.com/LiQingXin/p/" title="我的博客的随笔列表">我的随笔</a>
+</li>
+		<li>
+
+<a href="https://www.cnblogs.com/LiQingXin/MyComments.html" title="我的发表过的评论列表">我的评论</a>
+</li>
+		<li>
+
+<a href="https://www.cnblogs.com/LiQingXin/OtherPosts.html" title="我评论过的随笔列表">我的参与</a>
+</li>
+		<li>
+
+<a href="https://www.cnblogs.com/LiQingXin/RecentComments.html" title="我的博客的评论列表">最新评论</a>
+</li>
+		<li>
+
+<a href="https://www.cnblogs.com/LiQingXin/tag/" title="我的博客的标签列表">我的标签</a>
+</li>
+
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div>
+
+
+</div>
+
+<!-- 最新随笔 -->
+
+
+
+<!-- 我的标签 -->
+<div id="sidebar_toptags" class="sidebar-block">
+    
+</div>
+
+<!-- 积分与排名 -->
+
+
+<!-- 随笔分类、随笔档案、文章分类、新闻分类、相册、链接 -->
+<div id="sidebar_categories">
+    
+        <div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+            <h3 class="catListTitle">
+                
+
+随笔分类
+
+
+
+            </h3>
+
+
+            <ul>
+
+                        <li>
+                            
+<a href="https://www.cnblogs.com/LiQingXin/category/1773849.html" rel="" target="">
+    电脑问题(1)
+</a>
+ 
+
+                        </li>
+                        <li>
+                            
+<a href="https://www.cnblogs.com/LiQingXin/category/1785310.html" rel="" target="">
+    软件测试(2)
+</a>
+ 
+
+                        </li>
+                        <li>
+                            
+<a href="https://www.cnblogs.com/LiQingXin/category/1765831.html" rel="" target="">
+    数据可视化(2)
+</a>
+ 
+
+                        </li>
+
+            </ul>
+
+
+        </div>
+        <div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+            <h3 class="catListTitle">
+                
+
+随笔档案
+
+
+
+            </h3>
+
+
+            <ul>
+
+                        <li>
+                            
+<a href="https://www.cnblogs.com/LiQingXin/archive/2020/06.html" rel="" target="">
+    2020年6月(8)
+</a>
+ 
+
+                        </li>
+                        <li>
+                            
+<a href="https://www.cnblogs.com/LiQingXin/archive/2020/05.html" rel="" target="">
+    2020年5月(32)
+</a>
+ 
+
+                        </li>
+                        <li>
+                            
+<a href="https://www.cnblogs.com/LiQingXin/archive/2020/04.html" rel="" target="">
+    2020年4月(16)
+</a>
+ 
+
+                        </li>
+
+            </ul>
+
+
+        </div>
+
+</div>
+
+<!-- 最新评论 -->
+<div id="sidebar_recentcomments" class="sidebar-block">
+    
+</div>
+
+
+
+<!-- 阅读排行榜 -->
+<div id="sidebar_topviewedposts" class="sidebar-block">
+    <div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock">
+        <ul style="word-break:break-all">
+                    <li>
+                        <a href="https://www.cnblogs.com/LiQingXin/p/12874823.html">
+                            1. 
+猴子吃桃问题：猴子第一天摘下若干个桃子，当即吃了一半，还不过瘾，又多吃了一个。第二天早上又将第一天剩下的桃子吃掉一半，有多吃了一个。以后每天早上
+都吃了前一天剩下的一半零一个。到第 10 天早上想再吃时，发现只剩下一个桃子了。编写程序求猴子第一天摘了多少个桃子。 (548)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.cnblogs.com/LiQingXin/p/12909024.html">
+                            2. 
+一个数如果恰好等于它的因子之和，这个数就称之为"完数"。6的因子为1,2,3,而6=1+2+3，因此6是“完数”.编程序找出1000之内的所有完
+数，并按照下面格式输出其因子：6 its factors are 1 2 3(356)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.cnblogs.com/LiQingXin/p/12867838.html">
+                            3. 有一个分数序列：2/1，3/2，5/3，8/5，13/8，21/13，... 求出这个数列的前20项之和(345)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.cnblogs.com/LiQingXin/p/12852458.html">
+                            4. 输出所有的"水仙花数"，所谓"水仙花数"是指一个3位数，其各位数字立方和等于该数本身。例如，153是一个水仙花数，因为153=1^3+5^3+3^3(305)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.cnblogs.com/LiQingXin/p/12851974.html">
+                            5. 求Sn=a+aa+aaa+...+aa..a（n个a）之值，其中a是一个数字,n表示a的位数，例如：2+22+222+2222+22222(n=5)，n由键盘输入(225)
+                        </a>
+                    </li>
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+<!-- 评论排行榜 -->
+<div id="sidebar_topcommentedposts" class="sidebar-block">
+    
+</div>
+
+<!-- 推荐排行榜 -->
+<div id="sidebar_topdiggedposts" class="sidebar-block">
+    
+</div></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright © 2020 采姑娘的小蘑菇a
+<br><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+
+
+</body></html>
